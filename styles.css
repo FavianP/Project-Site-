@@ -1,0 +1,58 @@
+body{
+    font-size: larger;
+    background-image: linear-gradient(180deg, rgb(64, 0, 255), rgb(10, 225, 233));
+}
+
+div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+} 
+
+div.project-tools {
+    display: grid ;
+    grid-template-rows: repeat(3, 1fr);
+    animation: scaleUp 2s linear infinite;
+
+
+
+}
+
+div.header{
+    animation: shakebyShake 5s ease-in-out infinite; 
+} 
+
+div.myname{
+    background-color:white;
+    font-style: italic;
+} 
+div.project-wrapper{
+    box-shadow: 10px 5px 6px teal;
+}
+
+footer{
+  border-color: aquamarine;
+  border-radius: 20px;
+}
+
+@keyframes shakebyShake {
+  
+    0% {transform: rotate(0deg)}
+    
+    33% {transform: rotate(3deg)} 
+    
+    66% {transform: rotate(-3deg)} 
+    
+    100% { transform: rotate(0deg) }
+        
+    
+    
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.25);
+    }
+  }
